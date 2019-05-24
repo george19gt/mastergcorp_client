@@ -4,7 +4,7 @@
 
 /pages/home/home.ts
 
-*Consumo API REST*
+**Consumo API REST*
 
 /providers/prueba/prueba.ts
 
