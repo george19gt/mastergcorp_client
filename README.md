@@ -5,4 +5,4 @@
 /pages/home/home.ts
 
 ****Consumo API REST***
-/pages/home/providers/prueba/prueba.ts
+/providers/prueba/prueba.ts
