@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>
+            REST SERVICE - TEST
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <p><strong>Credential</strong></p>
+    <ion-label>Key: </ion-label>
+    <ion-row>
+        <ion-col col-2>
+            <ion-input style="border: 1px solid;" [(ngModel)]="key"> </ion-input>
+        </ion-col>
+        <ion-col col-1>
+            <button ion-button color="primary" (click)="credential()">Send</button>
+        </ion-col>
+        <ion-col col-6>
+            <div>
+                {{data | json}}
+            </div>
+        </ion-col>
+    </ion-row>
+    <hr>
+    <p><strong>Message Post</strong></p>
+
+    <ion-row>
+        Msg:
+        <ion-col col-2>
+            <ion-input style="border: 1px solid;" [(ngModel)]="msg"> </ion-input>
+        </ion-col>
+        Tags:
+        <ion-col col-2>
+            <ion-input style="border: 1px solid;" [(ngModel)]="tags"> </ion-input>
+        </ion-col>
+        <ion-col col-1>
+            <button ion-button color="primary" (click)="message_post()">Send</button>
+        </ion-col>
+        <ion-col col-6>
+            <div>
+                {{dataMessage | json}}
+            </div>
+        </ion-col>
+    </ion-row>
+    <hr>
+    <p><strong>Message Get</strong></p>
+
+    <ion-row>
+        id:
+        <ion-col col-2>
+            <ion-input style="border: 1px solid;" [(ngModel)]="id"> </ion-input>
+        </ion-col>
+        <ion-col col-1>
+            <button ion-button color="primary" (click)="message_get_id()">Send</button>
+        </ion-col>
+        <ion-col col-6>
+            <div>
+                {{dataMessageGetId | json}}
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <hr>
+    <p><strong>Messages Get</strong></p>
+
+    <ion-row>
+        tags:
+        <ion-col col-2>
+            <ion-input style="border: 1px solid;" [(ngModel)]="tag"> </ion-input>
+        </ion-col>
+        <ion-col col-1>
+            <button ion-button color="primary" (click)="message_get_tag()">Send</button>
+        </ion-col>
+        <ion-col col-6>
+            <div>
+                {{dataMessageGetTags | json}}
+            </div>
+        </ion-col>
+    </ion-row>
+    <hr>
+
+</ion-content>
